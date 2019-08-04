@@ -1,7 +1,30 @@
+import React, { Component } from 'react';
+import "./Chat.css";
 
-import React from 'react';
+class Chat extends React.Component {
+  state = { messageInput: '' };
 
-export const Chat = () => {
-  <div className="chat"><input className="input-message"></input> </div>
+  changeInputMessage = () => {
+    this.setState({ messageInput: this.state.messageInput })
+  };
+
+  // sendMessageOnEnter = () => { };
+
+  render() {
+    return <div className="chat"><input className="input-message" value={this.state.messageInput}></input> </div>
+  }
 }
+
+export default Chat;
+
+
+
+// constructor(props) {
+  //   this.super(props);
+  //   this.super(props);
+  // }
+  // state = { messageInput: message };
+
+// changeInputMessage() { }
+// sendMessageOnEnter() { }
 

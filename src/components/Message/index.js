@@ -1,5 +1,6 @@
 import React from 'react';
+import "./Message.css";
 
 export const Message = () => {
-  <span className="message"></span>
+  return <span className="message"></span>
 }
